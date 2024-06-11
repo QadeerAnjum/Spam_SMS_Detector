@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Ultra&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Model Integration</title>
+    <style>
+        body {
+            font-family: 'Shrikhand', cursive;
+            background: linear-gradient(to bottom, #1c0331, #230531);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .AnswerSection {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .answer {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .Backbtn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #ffffff;
+            background-color: #007bff;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .Backbtn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <section class="AnswerSection">
+        <p class="answer">
+            {% if answer == "ham" %}
+                Not a Spam Message
+            {% else %}
+                Spam Message
+            {% endif %}
+        </p>
+        <a href="/" class="Backbtn">Back</a>
+    </section>
+    
+    <script>
+        
+    </script>
+</body>
+</html>
